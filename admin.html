@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard</title>
+</head>
+<body>
+  <h2>Welcome Admin</h2>
+  <button onclick="logout()">Logout</button>
+
+  <script>
+    if (!localStorage.getItem("adminToken")) {
+      window.location.href = "index.html";
+    }
+    function logout() {
+      localStorage.removeItem("adminToken");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
