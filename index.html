@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nithish Kumar T | Full Stack Developer</title>
+  <link rel="stylesheet" href="in.css" />
+</head>
+<body>
+
+<header>
+  <div class="container nav" style="max-width:100%; margin:0; padding:0 20px;
+            display:flex; align-items:center; justify-content:space-between; height:60px;">
+    <h1 class="logo" style="margin:0;">Nithish Kumar <span>Portfolio</span></h1>
+     <div style="display:flex; align-items:center; gap:12px;">
+    <ul id="menu" style="display:flex; list-style:none; gap:18px; margin:0; padding:0;">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li id="userNav">
+  <a href="#admin-login" id="loginLink">Login</a>
+</li>
+
+<li id="profileNav" style="display:none;">
+  <div class="profile">
+    <img id="avatar" src="https://ui-avatars.com/api/?name=User" alt="avatar">
+    <span id="username"></span>
+    <button id="logoutBtn">Logout</button>
+  </div>
+</li>
+
+
+
+    </ul>
+
+    <button id="toggle">☰</button>
+    <button id="themeToggle">🌙</button>
+  </div>
+</header>
+
+<section id="home" class="hero">
+  <div class="container">
+    <h2>Hello, I'm</h2>
+    <h1>Nithish Kumar T</h1>
+    <p>Full Stack Developer</p>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="myresume.pdf"class="btn" download>Download Resume</a>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <h2>About Me</h2>
+  <p>
+    I am a Full Stack Developer with experience in building scalable web
+    applications using React, Node.js, Express, and MongoDB. I enjoy creating
+    secure APIs and responsive user interfaces.
+  </p>
+</section>
+
+<section id="skills" class="section gray">
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+    <span>React</span><span>Node.js</span><span>Express</span>
+    <span>MongoDB</span><span>MySQL</span>
+    <span>Git</span><span>GitHub</span><span>UI/UX</span>
+    <span>Java</span>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>Course Management System</h3>
+      <p>This project is a course-based web application designed to organize and display educational content efficiently.
+        It allows users to browse courses, view details, and track learning progress.</p>
+    </div>
+
+    <div class="card">
+      <h3>Student Management System</h3>
+      <p>This project is a console-based Student Management System developed to manage student records efficiently. It allows users to add, update, delete, and view student information using a text-based interface. </p>
+    </div>
+
+    <div class="card">
+      <h3>Portfolio</h3>
+      <p>Updates and resource management.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="education" class="section gray">
+  <h2>Education</h2>
+  <div class="edu">
+    <h3>B.Tech in Information Technology</h3>
+    <p>Sri Shakthi Institute of Engineering and Technology</p>
+    <span>2023 – 2027 | CGPA: 7.60</span>
+  </div>
+  <div class="edu">
+    <h3>Higher Secondary</h3>
+    <p>Servite Matric Higher Secondary School</p>
+    <span>2022 – 2023 | 78.3%</span>
+  </div>
+</section>
+<section id="contact" class="section">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:nithishkumar6442@gmail.com">nithishkumar6442@gmail.com</a></p>
+  <p>Phone: +91 8072827804</p>
+  <div class="links">
+    <a href="https://github.com/mernwithme" target="_blank">GitHub</a>
+    <a href="#" target="_blank">LinkedIn</a>
+    <a href="https://leetcode.com/u/mernX/" target="_blank">LeetCode</a>
+  </div>
+</section>
+
+<section id="admin-login" class="section gray">
+  <h2>User Login</h2>
+
+  <form id="loginForm">
+    <input type="text" id="loginUser" placeholder="Username" required><br>
+    <input type="password" id="loginPass" placeholder="Password" required><br>
+    <button type="submit">Login</button>
+  </form>
+  <p id="authMsg"></p>
+</section>
+
+
+<footer>
+  <p>© 2025 Nithish Kumar T | Full Stack Developer</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
